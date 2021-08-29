@@ -1,0 +1,8 @@
+.active {
+  display: initial !important;
+  transition: .4s;
+}
+
+.active-icon {
+  transform: rotate(-180deg);
+}
