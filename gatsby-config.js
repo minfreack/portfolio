@@ -3,6 +3,7 @@ module.exports = {
 		siteUrl: 'https://www.yourdomain.tld',
 		title: 'Portfolio Luis Ernesto',
 	},
+	pathPrefix: 'portfolio',
 	plugins: [
 		'gatsby-plugin-styled-components',
 		'gatsby-plugin-image',
