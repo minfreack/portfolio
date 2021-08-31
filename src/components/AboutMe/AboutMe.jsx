@@ -38,7 +38,7 @@ export const AboutMe = () => {
 			</Slide>
 			<Fade>
 				<StaticImage
-					src="../../images/testpic.png"
+					src="../../images/profilepicture2.png"
 					alt="Profile Picture"
 					width={300}
 					placeholder="none"

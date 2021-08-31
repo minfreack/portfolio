@@ -4,6 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 import { AboutMe } from '../components/AboutMe/AboutMe';
 import { ContactMe } from '../components/ContactMe/ContactMe';
 import { Experience } from '../components/Experience/Experience';
+import { Footer } from '../components/Footer/Footer';
 import { Header } from '../components/Header/Header';
 import { NavBar } from '../components/NavBar/NavBar';
 import { Projects } from '../components/Projects/Projects';
@@ -37,6 +38,7 @@ const IndexPage = () => {
 	return (
 		<>
 			<Helmet>
+				<title>Portfolio - Luis Ernesto</title>
 				<link rel="preconnect" href="https://fonts.googleapis.com"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
 				<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>        
@@ -49,6 +51,7 @@ const IndexPage = () => {
 			<Projects/>
 			<Experience/>
 			<ContactMe/>
+			<Footer/>
 		</>
 	);
 };

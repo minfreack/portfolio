@@ -42,7 +42,7 @@ export const Header = () => {
 			<Slide left>
 				<Presentation>
 					<H1>¡Hey hola! 🖐🏻 <br/>
-        Soy Luis Ernesto un <Span>Front End <br/>Developer</Span> que ama aprender y desarrollar <Span>cosas increíbles.</Span></H1>
+        Mi nombre es Luis Ernesto y soy un <Span>Front End <br/>Developer</Span> que ama aprender y desarrollar <Span>cosas increíbles.</Span></H1>
 					<SocialButtons>
 						<SocialIcon href="https://www.linkedin.com/in/luis-ernesto-ramirez-castillo/" target="_blank"><UilLinkedin size={25}/></SocialIcon>
 						<SocialIcon href="https://github.com/minfreack" target="_blank"><UilGithub size={25}/></SocialIcon>

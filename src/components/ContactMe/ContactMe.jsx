@@ -50,6 +50,17 @@ color: ${props => props.black ? '#010101' : '#fff'};
 }
 `;
 
+
+const A = styled.a`
+font-size: 1.25rem;
+font-weight: 400;
+text-align: ${props => props.variant ? 'center' : 'left'};
+color: ${props => props.black ? '#010101' : '#fff'};
+@media screen and (max-width: 767.9px){
+  font-size: .8rem;
+}
+`;
+
 const StyledP = styled.p`
 font-size: ${props => props.variant ? '.75rem' : '1.1rem'};
 font-style: ${props => props.italic && 'italic'};
@@ -100,7 +111,7 @@ export const ContactMe = () => {
 					<Fade top>
 						<H4 black><UilEnvelope/></H4>
 						<EmailInfo>
-							<H4 black>neto2racas@gmail.com</H4>
+							<A href="mailto:neto2racas@gmail.com" black>neto2racas@gmail.com</A>
 							<StyledP gray variant>Síentete libre de contactarme si tienes alguna pregunta o simplemente buscas a alguien con quien platicar.</StyledP>
 						</EmailInfo>
 					</Fade>

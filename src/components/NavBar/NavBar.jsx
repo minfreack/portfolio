@@ -51,6 +51,7 @@ font-weight: 500;
   transition: .5s;
 }
 `;
+
 export const NavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
