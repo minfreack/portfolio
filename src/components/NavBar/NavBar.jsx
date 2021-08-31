@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { UilBars } from '@iconscout/react-unicons';
 import { useState } from 'react';
-
+import Fade from 'react-reveal/Fade';
 
 const Nav = styled.nav`
 padding: 0 2rem;
@@ -55,15 +55,17 @@ export const NavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<Nav>
-			<Hamburguer onClick={() => setIsOpen(!isOpen)}><UilBars/></Hamburguer>
-			<Menu isOpen={isOpen}>
-				<NavLink to="/">Hola! 🖐🏻</NavLink>
-				<NavLink to="#about">Acerca de 👩🏻‍💻</NavLink>
-				<NavLink to="#skills">Skills ⚙</NavLink>
-				<NavLink to="#projects">Proyectos 💻</NavLink>
-				<NavLink to="#experience">Experiencia 💼</NavLink>
-				<NavLink to="#contact">Contacto 📧</NavLink>
-			</Menu>
+			<Fade top>
+				<Hamburguer onClick={() => setIsOpen(!isOpen)}><UilBars/></Hamburguer>
+				<Menu isOpen={isOpen}>
+					<NavLink to="/">Hola! 🖐🏻</NavLink>
+					<NavLink to="#about">Acerca de 👩🏻‍💻</NavLink>
+					<NavLink to="#skills">Skills ⚙</NavLink>
+					<NavLink to="#projects">Proyectos 💻</NavLink>
+					<NavLink to="#experience">Experiencia 💼</NavLink>
+					<NavLink to="#contact">Contacto ✉</NavLink>
+				</Menu>
+			</Fade>
 		</Nav>
 	);
 };

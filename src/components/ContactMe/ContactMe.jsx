@@ -4,6 +4,7 @@ import { SectionGrid } from '../Commons/SectionGrid';
 import { SectionTitleBottom, SectionTitleTop } from '../Commons/SectionTitles';
 import { UilLinkedin, UilGithub, UilInstagram, UilEnvelope } from '@iconscout/react-unicons';
 import { H3 } from '../Commons/H3';
+import Fade from 'react-reveal/Fade';
 
 const ContactCard = styled.div`
 grid-column: 1 / 6;
@@ -85,6 +86,10 @@ const H2 = styled.h2`
 }
 `;
 
+const Phrases = styled.div`
+grid-column: 1 / 3;
+`;
+
 export const ContactMe = () => {
 	return (
 		<SectionGrid id="contact">
@@ -92,23 +97,31 @@ export const ContactMe = () => {
 			<H3>🌟 ¡Desarrollemos proyectos geniales juntos! 🌟</H3>
 			<ContactCard>
 				<Email>
-					<H4 black><UilEnvelope/></H4>
-					<EmailInfo>
-						<H4 black>neto2racas@gmail.com</H4>
-						<StyledP gray variant>Síentete libre de contactarme si tienes alguna pregunta o simplemente buscas a alguien con quien platicar.</StyledP>
-					</EmailInfo>
+					<Fade top>
+						<H4 black><UilEnvelope/></H4>
+						<EmailInfo>
+							<H4 black>neto2racas@gmail.com</H4>
+							<StyledP gray variant>Síentete libre de contactarme si tienes alguna pregunta o simplemente buscas a alguien con quien platicar.</StyledP>
+						</EmailInfo>
+					</Fade>
 				</Email>
 				<SocialMedia>
-					<EmailInfo>
-						<H4 black variant>También puedes contactarme en:</H4>
-						<SocialButtons>
-							<SocialIcon href="https://www.linkedin.com/in/luis-ernesto-ramirez-castillo/" target="_blank"><UilLinkedin size={25}/></SocialIcon>
-							<SocialIcon href="https://github.com/minfreack" target="_blank"><UilGithub size={25}/></SocialIcon>
-							<SocialIcon href="https://www.instagram.com/minfreack/" target="_blank"><UilInstagram size={25}/></SocialIcon>
-						</SocialButtons>
-					</EmailInfo>
+					<Fade top>
+						<EmailInfo>
+							<H4 black variant>También puedes contactarme en:</H4>
+							<SocialButtons>
+								<SocialIcon href="https://www.linkedin.com/in/luis-ernesto-ramirez-castillo/" target="_blank"><UilLinkedin size={25}/></SocialIcon>
+								<SocialIcon href="https://github.com/minfreack" target="_blank"><UilGithub size={25}/></SocialIcon>
+								<SocialIcon href="https://www.instagram.com/minfreack/" target="_blank"><UilInstagram size={25}/></SocialIcon>
+							</SocialButtons>
+						</EmailInfo>
+					</Fade>
 				</SocialMedia>
-				<H2> La única forma de hacer un buen trabajo es amar lo que haces 💖</H2>
+				<Phrases>
+					<Fade top>
+						<H2> La única forma de hacer un buen trabajo es amar lo que haces 💖</H2>
+					</Fade>
+				</Phrases>
 			</ContactCard>
 			<SectionTitleBottom>&#60;ContactMe/&#62;</SectionTitleBottom>
 		</SectionGrid>

@@ -8,6 +8,7 @@ import { UilGithub, UilLink } from '@iconscout/react-unicons';
 import './projects.css';
 import { ButtonWithIcon } from '../Commons/ButtonWithIcon';
 import { H3 } from '../Commons/H3';
+import Slide from 'react-reveal/Slide';
 
 const Card = styled.div`
 display: flex;
@@ -63,72 +64,76 @@ export const Projects = () => {
 			<H3 variant>Estos son algunos de los proyectos que he realizado: 👩🏻‍💻</H3>
 			<Carousel cols={2} rows={1} gap={10} mobileBreakpoint={767.9} loop>
 				<Carousel.Item>
-					<Card>
-						<H4 black>To do List</H4>
-						<StaticImage
-							src="../../images/todo-list.png"
-							alt="Profile Picture"
-							placeholder="none"
-							quality="100"
-							className="project-image"
-						/>
-						<UsedTechnologies>
-							<StyledP>Tecnologías utilizadas:</StyledP>
+					<Slide left>
+						<Card>
+							<H4 black>To do List</H4>
 							<StaticImage
-								src="../../images/iconb-html.svg"
+								src="../../images/todo-list.png"
+								alt="Profile Picture"
+								placeholder="none"
 								quality="100"
-								alt="html"
+								className="project-image"
 							/>
-							<StaticImage
-								src="../../images/iconb-css.svg"
-								quality="100"
-								alt="html"
-							/>
-							<StaticImage
-								src="../../images/iconb-react.svg"
-								quality="100"
-								alt="html"
-							/>
-						</UsedTechnologies>
-						<Links>
-							<ButtonWithIcon href="https://github.com/minfreack/To-Do-List" target="_blank" variant>Ver repo &nbsp;<UilGithub/></ButtonWithIcon>
-							<ButtonWithIcon href="https://minfreack.github.io/To-Do-List/" target="_blank" variant>Ir al sitio &nbsp;<UilLink/></ButtonWithIcon>
-						</Links>
-					</Card>
+							<UsedTechnologies>
+								<StyledP>Tecnologías utilizadas:</StyledP>
+								<StaticImage
+									src="../../images/iconb-html.svg"
+									quality="100"
+									alt="html"
+								/>
+								<StaticImage
+									src="../../images/iconb-css.svg"
+									quality="100"
+									alt="html"
+								/>
+								<StaticImage
+									src="../../images/iconb-react.svg"
+									quality="100"
+									alt="html"
+								/>
+							</UsedTechnologies>
+							<Links>
+								<ButtonWithIcon href="https://github.com/minfreack/To-Do-List" target="_blank" variant>Ver repo &nbsp;<UilGithub/></ButtonWithIcon>
+								<ButtonWithIcon href="https://minfreack.github.io/To-Do-List/" target="_blank" variant>Ir al sitio &nbsp;<UilLink/></ButtonWithIcon>
+							</Links>
+						</Card>
+					</Slide>
 				</Carousel.Item>
 				<Carousel.Item>
-					<Card>
-						<H4 black>Tip Calculator</H4>
-						<StaticImage
-							src="../../images/tip-calculator.png"
-							alt="Profile Picture"
-							placeholder="none"
-							quality="100"
-							className="project-image"
-						/>
-						<UsedTechnologies>
-							<StyledP>Tecnologías utilizadas:</StyledP>
+					<Slide left>
+						<Card>
+							<H4 black>Tip Calculator</H4>
 							<StaticImage
-								src="../../images/iconb-html.svg"
+								src="../../images/tip-calculator.png"
+								alt="Profile Picture"
+								placeholder="none"
 								quality="100"
-								alt="html"
+								className="project-image"
 							/>
-							<StaticImage
-								src="../../images/iconb-sass.svg"
-								quality="100"
-								alt="html"
-							/>
-							<StaticImage
-								src="../../images/iconb-react.svg"
-								quality="100"
-								alt="html"
-							/>
-						</UsedTechnologies>
-						<Links>
-							<ButtonWithIcon href="https://github.com/minfreack/tip-calculator" target="_blank" variant>Ver repo &nbsp;<UilGithub/></ButtonWithIcon>
-							<ButtonWithIcon href="https://minfreack.github.io/tip-calculator/" target="_blank" variant>Ir al sitio &nbsp;<UilLink/></ButtonWithIcon>
-						</Links>
-					</Card>
+							<UsedTechnologies>
+								<StyledP>Tecnologías utilizadas:</StyledP>
+								<StaticImage
+									src="../../images/iconb-html.svg"
+									quality="100"
+									alt="html"
+								/>
+								<StaticImage
+									src="../../images/iconb-sass.svg"
+									quality="100"
+									alt="html"
+								/>
+								<StaticImage
+									src="../../images/iconb-react.svg"
+									quality="100"
+									alt="html"
+								/>
+							</UsedTechnologies>
+							<Links>
+								<ButtonWithIcon href="https://github.com/minfreack/tip-calculator" target="_blank" variant>Ver repo &nbsp;<UilGithub/></ButtonWithIcon>
+								<ButtonWithIcon href="https://minfreack.github.io/tip-calculator/" target="_blank" variant>Ir al sitio &nbsp;<UilLink/></ButtonWithIcon>
+							</Links>
+						</Card>
+					</Slide>
 				</Carousel.Item>
 			</Carousel>
 			<SectionTitleBottom>&#60;Projects/&#62;</SectionTitleBottom>
