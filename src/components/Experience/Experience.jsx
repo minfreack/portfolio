@@ -80,12 +80,6 @@ export const Experience = () => {
 		'item3': false,
 	});
 
-	const [studies, setStudies] = useState({
-		'item1': false,
-		'item2': false,
-		'item3': false,
-	});
-
 	return (
 		<SectionGrid variant id="experience">
 			<SectionTitleTop>&#60;Experience&#62;</SectionTitleTop>
@@ -153,59 +147,29 @@ export const Experience = () => {
 				<H3>Estudios y certificaciones 📚</H3>
 				<Fade top>
 					<ExperienceItem>
-						<H4>Ago 2020 - Dic 2020</H4>
+						<H4>Sep 2018 - Ago 2020</H4>
 						<ExperienceJob>
-							<StyledP>Instructor de Cursos</StyledP>
-							<StyledP>Volkswagen Group Academy</StyledP>
+							<StyledP>T.S.U. Desarrollo de Software</StyledP>
+							<StyledP>Unv. Tecnológica de Tehuacán</StyledP>
 						</ExperienceJob>
-						<StyledUilAngleDown className={`${studies.item1 == true && 'active-icon'}`}
-							onClick={() => setStudies({...studies, item1 : !studies.item1})}/>
-						<ExperienceJobDescription className={`${studies.item1 == true && 'active'}`}>
-							<Slide top>
-								<StyledP variant>Fui encargado de las capacitaciones de Office Excel 2019 en su nivel Intermedio y Avanzado.
-            Además realicé actividades como capacitar a empleados en trabajos propios, supervisar instructores y evaluar
-            desempeño de los participantes.
-								</StyledP>
-							</Slide>
-						</ExperienceJobDescription>
 					</ExperienceItem>
 				</Fade>
 				<Fade top>
 					<ExperienceItem >
-						<H4>Sep 2019 - Ene 2021</H4>
+						<H4>Sep 2020 - Abr 2022</H4>
 						<ExperienceJob>
-							<StyledP>Desarrollador E-learning</StyledP>
-							<StyledP>Idea Training</StyledP>
+							<StyledP>Ing. Desarrollo de Software</StyledP>
+							<StyledP>Unv. Tecnológica de Tehuacán</StyledP>
 						</ExperienceJob>
-						<StyledUilAngleDown className={`${studies.item2 == true && 'active-icon'}`}
-							onClick={() => setStudies({...studies, item2 : !studies.item2})}/>
-						<ExperienceJobDescription className={`${studies.item2 == true && 'active'}`}>
-							<Slide top>
-								<StyledP variant>Desarrollé y auxilié en más de 10 cursos E-learning en el software Adobe Captivate.
-            Además de esto tuve la oportunidad de impartir junto a un colaborador un curso de Desarrollo de Cursos 
-            E-learning orientados a la plataforma Articulate 360.
-								</StyledP>
-							</Slide>
-						</ExperienceJobDescription>
 					</ExperienceItem>
 				</Fade>
 				<Fade top>
 					<ExperienceItem >
-						<H4>Jun 2021 - Actual</H4>
+						<H4>Jun 2021</H4>
 						<ExperienceJob>
-							<StyledP>Desarrollador Web</StyledP>
-							<StyledP>Agencia Cometa</StyledP>
+							<StyledP>JavaScript Moderno</StyledP>
+							<StyledP>Udemy - Fernando Herrera</StyledP>
 						</ExperienceJob>
-						<StyledUilAngleDown className={`${studies.item3 == true && 'active-icon'}`}
-							onClick={() => setStudies({...studies, item3 : !studies.item3})}/>
-						<ExperienceJobDescription className={`${studies.item3 == true && 'active'}`}>
-							<Slide top>
-								<StyledP variant>Soy el encargado del desarrollo e implementación de E-commerce en 
-            Wordpress con WooCommerce. Hasta ahora he desarrollado 3 tiendas de distintos rubros
-             que actualmente se encuentran en funcionamiento.
-								</StyledP>
-							</Slide>
-						</ExperienceJobDescription>
 					</ExperienceItem>
 				</Fade>
 			</ExperienceSection>
